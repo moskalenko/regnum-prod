@@ -130,12 +130,14 @@ GEM
     nio4r (2.7.3)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
+    observer (0.1.2)
     paperclip (6.1.0)
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
+    pkg-config (1.5.6)
     protected_attributes_continued (1.9.0)
       activemodel (>= 5.0)
     raabro (1.4.0)
@@ -176,6 +178,9 @@ GEM
       ffi (~> 1.0)
     recaptcha (5.9.0)
       json
+    rmagick (5.5.0)
+      observer (~> 0.1)
+      pkg-config (~> 1.4)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
       rspec-expectations (~> 3.13.0)
@@ -254,6 +259,7 @@ DEPENDENCIES
   protected_attributes_continued
   rails (~> 6.1)
   recaptcha
+  rmagick
   rspec
   rspec-rails
   rufus-scheduler
