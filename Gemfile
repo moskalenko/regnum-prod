@@ -29,7 +29,8 @@ gem 'rufus-scheduler'
 gem 'activerecord-import'#, '~>0.2.0'
 # group :test do
 gem 'rspec-rails'
-gem 'factory_girl_rails'
+gem 'factory_bot', '6.4.3'
+gem 'factory_bot_rails', '6.4.3'
 # end
 # group :assets do
 gem 'sass-rails'#,   '~> 3.2.6'#'~> 3.1.7'
