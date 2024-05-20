@@ -1,6 +1,6 @@
 class AccountsController < ApplicationController
   
-  before_filter :requires_current_user, :only => [:show,:update]
+  before_action :requires_current_user, :only => [:show,:update]
 
   def new
     if request.xhr?
@@ -57,6 +57,7 @@ class AccountsController < ApplicationController
 
     begin
       if verify_recaptcha(:model => params, :message => "Oh! It's error with reCAPTCHA!") && @user.save
+        Rails.logger.info 'Successfully verified recaptcha'
         AccountMailer.account_created(@user).deliver_now
         AdminAccountMailer.account_created(@user).deliver_now
         if !current_user.nil? && current_user.is_admin?
