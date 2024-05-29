@@ -47,5 +47,13 @@ module Regnum
     # rails 3.1.12 assets stuff
     config.assets.enabled = false
     config.assets.version = '1.0'
+
+    # OM
+    config.active_record.yaml_column_permitted_classes = [
+        Set,
+        Symbol,
+        ActiveSupport::HashWithIndifferentAccess,
+        ActionController::Parameters
+    ]
   end
 end
