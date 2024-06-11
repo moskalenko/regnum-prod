@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_04_194315) do
+ActiveRecord::Schema.define(version: 2024_06_06_124856) do
 
   create_table "apomorphies", id: :integer, charset: "utf8", collation: "utf8_unicode_ci", force: :cascade do |t|
     t.string "description"
